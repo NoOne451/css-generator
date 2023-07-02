@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tools">
+            <h1 class="heading">border radius options</h1><hr>
+            <div class="controls">
+                <div class="form-group">
+                    <label class="label">all corners radius <span id="allru" class="span">10px</span></label>
+                    <input type="range" id="allr" class="input" value="10" min="0" max="200"> 
+                   </div>
+                   <div class="form-group">
+                    <label class="label">top left radius<span id="tlu"  class="span">10px</span></label>
+                    <input type="range" id="tl" class="input" value="10" min="0" max="200"> 
+                   </div>
+                   <div class="form-group">
+                    <label class="label">top right radius <span id="tru"  class="span">10px</span></label>
+                    <input type="range" id="tr" class="input" value="10" min="0" max="200"> 
+                   </div>
+                   <div class="form-group">
+                    <label class="label">bottom right radius <span id="bru" class="span">10px</span></label>
+                    <input type="range" id="br" class="input" value="10" min="0" max="200"> 
+                   </div>
+                   <div class="form-group">
+                    <label class="label">bottom left radius <span id="blu"  class="span">10px</span></label>
+                    <input type="range" id="bl" class="input" value="10" min="0" max="200"> 
+                   </div>
+                   <div class="form-group">
+                    <label class="label">container color<input type="color" id="cc" class="input" value="#e67e22"> </label>
+                    
+                   </div>
+                   <div class="form-group">
+                    <label class="label">border color<input type="color" id="bc" class="input" value="#000000"> </label>
+                   </div>
+                   <div class="form-group">
+                    <label for="bs" class="label">border style      <select name="bs" id="bs" class="span">
+                        <option value="solid">solid</option>
+
+                        <option value="dotted">dotted</option>
+                        <option value="dashed">dashed</option>
+                        <option value="double">double</option>
+                        <option value="groove">groove</option>
+                        <option value="ridge">ridge</option>
+                        <option value="inset">inset</option>
+                        <option value="outset">outset</option>
+                        <option value="none">none</option>
+                        <option value="hidden">hidden</option>
+
+                    </select></label>
+                   
+              
+                   </div>
+                   <div class="form-group">
+                    <label class="label">border width <span id="bwu"  class="span">10px</span></label>
+                    <input type="range" id="bw" class="input" value="0" min="0" max="50"> 
+                   </div>
+            </div>
+               
+        </div>
+        <div class="output">
+            <div class="box "></div>
+            <div  class="text-con">
+                <textarea name="" id=""  class="outputtext"></textarea>
+                <button id="copybtn">copy code</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
