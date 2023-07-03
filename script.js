@@ -39,6 +39,8 @@ var blv=bl.value;
 
 allr.addEventListener("input",allrad);
 function allrad(){ 
+    color=conc.value;
+    box.style.backgroundColor=color;
     allrv=allr.value;
     tl.value=allrv
     tr.value=allrv
@@ -54,7 +56,8 @@ function allrad(){
     bsv=bs.value;
     bwv=bw.value;
     cod2=`border:${bsv} ${bwv}px ${bcv};
-    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px  ;`;
+    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px ;
+    background-color:${color} ;`;
     allru.innerText=`${allrv}px`;
     output.value=cod2;
     box.style.cssText=cod2;
@@ -64,6 +67,8 @@ function allrad(){
 
 tl.addEventListener("input",tlrad);
 function tlrad(){ 
+    color=conc.value;
+    box.style.backgroundColor=color;
     tlv=tl.value;
     trv=tr.value;
     brv=br.value;
@@ -73,7 +78,8 @@ function tlrad(){
     bsv=bs.value;
     bwv=bw.value;
     cod2=`border:${bsv} ${bwv}px ${bcv};
-    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px  ;`;
+    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px ;
+    background-color:${color} ;`;
     tlu.innerText=`${tlv}px`;
     output.value=cod2;
     box.style.cssText=cod2;
@@ -85,6 +91,8 @@ function tlrad(){
 
 tr.addEventListener("input",trrad);
 function trrad(){ 
+    color=conc.value;
+    box.style.backgroundColor=color;
     tlv=tl.value;
     trv=tr.value;
     brv=br.value;
@@ -94,7 +102,8 @@ function trrad(){
     bsv=bs.value;
     bwv=bw.value;
     cod2=`border:${bsv} ${bwv}px ${bcv};
-    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px  ;`;
+    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px ;
+    background-color:${color} ;`;
     tru.innerText=`${trv}px`;
     output.value=cod2;
     box.style.cssText=cod2;
@@ -103,6 +112,8 @@ function trrad(){
 
 br.addEventListener("input",brrad);
 function brrad(){ 
+    color=conc.value;
+    box.style.backgroundColor=color;
     tlv=tl.value;
     trv=tr.value;
     brv=br.value;
@@ -112,7 +123,8 @@ function brrad(){
     bsv=bs.value;
     bwv=bw.value;
     cod2=`border:${bsv} ${bwv}px ${bcv};
-    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px  ;`;
+    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px ;
+    background-color:${color} ;`;
     bru.innerText=`${brv}px`;
     output.value=cod2;
     box.style.cssText=cod2;
@@ -121,6 +133,8 @@ function brrad(){
 
 bl.addEventListener("input",blrad);
 function blrad(){ 
+    color=conc.value;
+    box.style.backgroundColor=color;
     tlv=tl.value;
     trv=tr.value;
     brv=br.value;
@@ -129,9 +143,9 @@ function blrad(){
     bcv=bc.value;
     bsv=bs.value;
     bwv=bw.value;
-    cod2=`
-    border:${bsv} ${bwv}px ${bcv};
-    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px  ;`;
+    cod2=`border:${bsv} ${bwv}px ${bcv};
+    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px ;
+    background-color:${color} ;`;
     blu.innerText=`${blv}px`;
     output.value=cod2;
     box.style.cssText=cod2;
@@ -139,14 +153,7 @@ function blrad(){
 }
 
 conc.addEventListener("input",()=>{
-    allrad()
     color=conc.value;
-    box.style.backgroundColor=color;
-})
-
-bc.addEventListener("input",borderchange)
-bs.addEventListener("input",borderchange)
-bw.addEventListener("input",()=>{
     
     tlv=tl.value;
     trv=tr.value;
@@ -157,13 +164,20 @@ bw.addEventListener("input",()=>{
     bsv=bs.value;
     bwv=bw.value;
     cod2=`border:${bsv} ${bwv}px ${bcv};
-    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px  ;`;
-    bwu.innerText=`${bwv}px`;
-    console.log(cod2)
-    box.style.cssText=cod2;
+    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px ;
+    background-color:${color} ;`;
     output.value=cod2;
+    box.style.cssText=cod2;
+    
+    
 })
-function borderchange(){
+
+bc.addEventListener("input",borderchange)
+bs.addEventListener("input",borderchange)
+bw.addEventListener("input",()=>{
+    color=conc.value;
+    box.style.backgroundColor=color;
+
     tlv=tl.value;
     trv=tr.value;
     brv=br.value;
@@ -173,7 +187,28 @@ function borderchange(){
     bsv=bs.value;
     bwv=bw.value;
     cod2=`border:${bsv} ${bwv}px ${bcv};
-    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px  ;`;
+    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px ;
+    background-color:${color} ;`;
+    bwu.innerText=`${bwv}px`;
+    console.log(cod2)
+    box.style.cssText=cod2;
+    output.value=cod2;
+})
+function borderchange(){
+    color=conc.value;
+    box.style.backgroundColor=color; 
+
+    tlv=tl.value;
+    trv=tr.value;
+    brv=br.value;
+    blv=bl.value;
+
+    bcv=bc.value;
+    bsv=bs.value;
+    bwv=bw.value;
+    cod2=`border:${bsv} ${bwv}px ${bcv};
+    border-radius:${tlv}px ${trv}px ${brv}px ${blv}px ;
+    background-color:${color} ;`;
     console.log(cod2)
     box.style.cssText=cod2;
     output.value=cod2;
